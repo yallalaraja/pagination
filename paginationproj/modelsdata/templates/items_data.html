@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Items list </title>
+</head>
+<body>
+    <ul type="round">
+        <li type="None">
+            {% for item in items %}
+               <li> Product Name:{{item.name}}</li> <br>
+               <li>Prod Description -- {{item.desc}}</li> <br>
+                <li>Price of prod:{{item.price}}</li><br>
+            {% endfor %}
+        </li>
+    </ul>
+</body>
+</html>
